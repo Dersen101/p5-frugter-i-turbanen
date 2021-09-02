@@ -43,10 +43,11 @@ function setup() {  // kører kun en gang, når programmet startes
     let billede = createCanvas(595, 600);
     textAlign(CENTER, CENTER);
     
-    billede.center();
+    billede.position(450,50);
+
     // De følgende linjer opretter en knap og formattere den
     genstartKnap = createButton('Genstart');
-    genstartKnap.position(100,20);
+    genstartKnap.position(450,20);
     genstartKnap.mousePressed(restart);
     genstartKnap.hide();
 
