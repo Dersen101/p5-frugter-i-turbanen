@@ -1,0 +1,9 @@
+.menu{
+    float: left;
+    margin-left: 10%;
+}
+.counter_menu{
+    float: left;
+    margin-left: -10%;
+    margin-top: 10%;
+}
