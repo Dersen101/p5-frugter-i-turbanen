@@ -1,4 +1,6 @@
 # p5-frugter-i-turbanen
-Brush-up forløb af p5- og programmeringskompetencer ved starten af et nyt år med Digital Teknik
+Jeg vil gerne lave en menu, til venstre for spillet. Umiddelbart kommer der en score, så kan man måske gøre noget ved
 <br>
-Del 2: Frugtklasse, array, DOM
+de point man får.
+<br>
+Hvis jeg kan få flere ting ind i menuen, så gør jeg det.
