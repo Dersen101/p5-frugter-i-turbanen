@@ -40,9 +40,10 @@ function preload() {
 }
 
 function setup() {  // kører kun en gang, når programmet startes
-    createCanvas(595, 600);
+    let billede = createCanvas(595, 600);
     textAlign(CENTER, CENTER);
     
+    billede.center();
     // De følgende linjer opretter en knap og formattere den
     genstartKnap = createButton('Genstart');
     genstartKnap.position(100,20);
@@ -56,6 +57,8 @@ function setup() {  // kører kun en gang, når programmet startes
     // parametrene til Frugt-konstruktøren er (x, y, radius, xspeed, yspeed, farve)
     limefrugt = new Frugt(20, 550, 20, 4, -10, [110,220,0]);
     frugtliste.push(limefrugt);
+
+
 }
 
 function draw() {
