@@ -17,6 +17,7 @@ let tid = 150;
 let limefrugt;
 let frugtliste = [];
 
+
 // Turbanen
 let turban;
 let turbanbillede;
