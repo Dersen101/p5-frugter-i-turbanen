@@ -3,4 +3,3 @@ Jeg vil gerne lave en menu, til venstre for spillet. Umiddelbart kommer der en s
 <br>
 de point man får.
 <br>
-Hvis jeg kan få flere ting ind i menuen, så gør jeg det.

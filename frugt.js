@@ -78,6 +78,7 @@ class Frugt {
         if (this.yspeed > 0) {
             if (turban.grebet(this.x, this.y, this.r)) {
                 score += 1;
+                counters += 10;
                 this.shootNew(); 
             }
         }

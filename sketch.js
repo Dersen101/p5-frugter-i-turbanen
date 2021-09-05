@@ -36,14 +36,14 @@ let spilIgang = true;   //flag
  * 
  */
 function preload() {
-    turbanbillede = loadImage('Saturn_tight_lille.png');
+    turbanbillede = loadImage('basket12.png');
 }
 
 function setup() {  // kører kun en gang, når programmet startes
     let billede = createCanvas(595, 600);
     textAlign(CENTER, CENTER);
     
-    billede.position(450,50);
+    billede.position(450,50); //center af canvas
 
     // De følgende linjer opretter en knap og formattere den
     genstartKnap = createButton('Genstart');
@@ -127,6 +127,9 @@ function move() {
     }
 }
 
+
+let counters = 0;
+
 function checkScore() {
     // Her checkes om turbanen har fanget appelsinen. Hvis ja, skydes den afsted igen
     // Men Frugt-klassen tjekker selv dette. Når appelsinen forsvinder fra scriptet her
@@ -134,17 +137,27 @@ function checkScore() {
     if (yspeed > 0) {
         if (turban.grebet(x, y, rad)) {
             score += 1;
+            counters += 10;
             shootNew(); 
         }
     }
+
 }
+
+function show () {
+    document.getElementById('counter').value = counters;
+}
+
+setInterval(show, 10)
+
+
     
 function shootNew() {
     //Her skal vi sørge for at en frugt skydes afsted igen. Lige nu er det kun appelsinen
     x = rad;
     y = random(200,550);
-    yspeed = newspeed * (y/550);
-    xspeed = random(4);
+    yspeed = -10*y/550; //newspeed * (y/550);
+    xspeed = random(4); //(4);
     tid = random(400);
 }
 
