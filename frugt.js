@@ -20,12 +20,17 @@ class Frugt {
         this.moving = false;
         this.showing = false;
         console.log("Ny frugt er lavet, dens ventetid er "+this.tid);
+        this.img = img;
     }  
 
+
+        
+
+        
     display() {
         if (this.showing) {
             fill(this.col);
-            ellipse(this.x, this.y, this.r*2, this.r*2);
+            image(this.img, this.x, this.y, this.r*2, this.r*2);
             // Sæt evt. et billede ind i stedet for disse to linjer
             // Men husk at det skal loades i sketch.js og at det skal kunne findes her
         }

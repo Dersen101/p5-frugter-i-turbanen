@@ -12,6 +12,7 @@ let yspeed = -10;
 let newspeed;
 const col = [220,110,0];
 let tid = 150;
+let img2;
 
 // Frugterne
 let limefrugt;
@@ -35,8 +36,13 @@ let spilIgang = true;   //flag
 /* 
  * 
  */
+    let garden;
+    let img;
 function preload() {
     turbanbillede = loadImage('basket12.png');
+    img = loadImage('green apple.png');
+    img2 = loadImage('appel.png');
+    garden = loadImage('garen1.jpg');
 }
 
 function setup() {  // kører kun en gang, når programmet startes
@@ -59,11 +65,18 @@ function setup() {  // kører kun en gang, når programmet startes
     limefrugt = new Frugt(20, 550, 20, 4, -10, [110,220,0]);
     frugtliste.push(limefrugt);
 
+    frugtliste.forEach(element => {
+        element.move();
+        element.checkScore();
+        element.display();
+    });
 
 }
 
+
+
 function draw() {
-    background(0);
+    background(garden);
     
     if (spilIgang) {
         // Flyt og tegn frugterne - lige nu kun limefrugten
@@ -99,7 +112,7 @@ function display() {
     }
     if (tid < 100) {
         fill(col);
-        ellipse(x, y, rad*2, rad*2);
+        image(img2, x, y, rad*2, rad*2);
 
     }
 
@@ -149,6 +162,7 @@ function show () {
 }
 
 setInterval(show, 10)
+
 
 
     
