@@ -5,9 +5,10 @@ de point man får.
 <br>
 
 MDA
+<br>
 Indenfor MDA har jeg lagt mest vægt på A - Aesthetics. Her er der ændret på baggrunden af spillet, frugterne og spilleren.
 <br>
-Grunden bag det, er for at det ser mere tilfredsstillende ud, og gør at man spiller spillet lidt længere tid.
+Grunden bag det, er for at det ser mere tilfredsstillende ud, og gør at man spiller spillet i lidt længere tid.
 <br>
 Hvis det hele var simple farver og der ikke skete særlig meget på skærmen, kunne de gøre at man mister lysten til at spille.
 <br>
